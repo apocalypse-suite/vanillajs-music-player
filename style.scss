@@ -27,7 +27,7 @@ body {
     padding: 20px 30px;
     position: relative;
     margin: 100px 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .img-container {
@@ -74,6 +74,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 button {
@@ -83,6 +84,7 @@ button {
     cursor: pointer;
     margin: 15px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .action-btn-big {
@@ -98,9 +100,10 @@ button {
     left: 20px;
     width: calc(100% - 40px);
     padding: 15px 10px 30px 10px;
+    // padding: 10px 10px 10px 150px;
     opacity: 0;
     transform: translateY(0%);
-    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    transition: transform 0.2s ease-out, opacity 0.1s ease-in;
     z-index: 0;
 
     .progress-container {
